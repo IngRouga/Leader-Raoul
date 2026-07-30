@@ -81,7 +81,11 @@
     border-radius:999px;
     box-shadow:0 8px 32px -8px rgba(0,0,0,0.5);
   }
-  .brand{font-family:'Sora'; font-weight:700; font-size:1rem;}
+  .brand{font-family:'Sora'; font-weight:700; font-size:1rem; display:flex; align-items:center; gap:8px;}
+  .logo-mark{
+    width:28px; height:28px; border-radius:8px; background:linear-gradient(135deg, var(--accent), #34d399);
+    color:#06281f; font-size:0.72rem; font-weight:800; display:flex; align-items:center; justify-content:center;
+  }
   .brand span{color:var(--accent);}
   .nav-links{display:flex; gap:28px; font-size:0.88rem; font-weight:500;}
   .nav-links a{color:var(--muted); position:relative; transition:color .2s;}
@@ -167,6 +171,14 @@
 
   .stats-row{display:grid; grid-template-columns:repeat(3, 1fr); gap:16px;}
   @media (max-width:520px){ .stats-row{grid-template-columns:1fr; max-width:220px;} }
+
+  .value-strip{padding:52px 0; border-top:1px solid var(--glass-border); border-bottom:1px solid var(--glass-border);}
+  .value-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:24px; text-align:center;}
+  @media (max-width:820px){ .value-grid{grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:520px){ .value-grid{grid-template-columns:repeat(2,1fr);} }
+  .value-item i{width:26px; height:26px; color:var(--accent); margin-bottom:12px;}
+  .value-item h4{font-family:'Sora'; font-size:0.92rem; margin-bottom:4px;}
+  .value-item p{font-size:0.78rem; color:var(--muted);}
   .stat-card{
     background:var(--glass); border:1px solid var(--glass-border); border-radius:18px;
     padding:20px 18px; backdrop-filter:blur(10px);
@@ -311,28 +323,30 @@
 <body>
 
 <nav aria-label="Navigation principale">
-  <div class="brand">Leader <span>Raoul</span></div>
+  <div class="brand"><span class="logo-mark">LR</span>Leader <span>Raoul</span></div>
   <div class="nav-links">
+    <a href="#hero">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#livre">Livre</a>
     <a href="#oratoire">Formation</a>
     <a href="#coaching">Coaching</a>
-    <a href="#livre">Livre</a>
-    <a href="#apropos">À propos</a>
   </div>
   <div style="display:flex; align-items:center; gap:6px;">
-    <a class="nav-cta" href="https://wa.me/22788215778" target="_blank" rel="noopener">Démarrer</a>
+    <a class="nav-cta" href="#livre">Se procurer le livre</a>
     <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMobilePanel">
       <i data-lucide="menu" id="navToggleIcon"></i>
     </button>
   </div>
 </nav>
 <div class="nav-mobile-panel" id="navMobilePanel">
+  <a href="#hero">Accueil</a>
+  <a href="#apropos">À propos</a>
+  <a href="#livre">Livre</a>
   <a href="#oratoire">Formation</a>
   <a href="#coaching">Coaching</a>
-  <a href="#livre">Livre</a>
-  <a href="#apropos">À propos</a>
 </div>
 
-<header class="hero">
+<header class="hero" id="hero">
   <div class="blob blob-1" aria-hidden="true"></div>
   <div class="blob blob-2" aria-hidden="true"></div>
   <div class="wrap hero-grid">
@@ -359,6 +373,23 @@
     </div>
   </div>
 </header>
+
+<section class="value-strip">
+  <div class="wrap value-grid reveal">
+    <div class="value-item"><i data-lucide="crown"></i><h4>Leadership</h4><p>Développer un leadership fort et authentique.</p></div>
+    <div class="value-item"><i data-lucide="target"></i><h4>Impact</h4><p>Créer un effet durable, pas seulement un discours.</p></div>
+    <div class="value-item"><i data-lucide="handshake"></i><h4>Accompagnement</h4><p>Un suivi humain et personnalisé.</p></div>
+    <div class="value-item"><i data-lucide="trending-up"></i><h4>Résultats</h4><p>Des progrès concrets, pas de vagues promesses.</p></div>
+    <div class="value-item"><i data-lucide="rocket"></i><h4>Transformation</h4><p>Transformer les défis en opportunités.</p></div>
+  </div>
+</section>
+
+<section style="padding:64px 0;">
+  <div class="wrap reveal" style="max-width:70ch; margin:0 auto; text-align:center;">
+    <p style="font-family:'Sora'; font-weight:600; font-size:clamp(1.15rem,2.4vw,1.5rem); color:var(--text);">Le véritable leadership ne consiste pas à diriger les autres, mais à révéler le potentiel qui sommeille en eux.</p>
+    <p style="font-size:0.85rem; color:var(--muted); margin-top:14px;">La conviction qui guide chaque formation, chaque séance de coaching et le livre « Osez Réaliser Vos Rêves ».</p>
+  </div>
+</section>
 
 <section id="oratoire">
   <div class="wrap">
@@ -490,16 +521,30 @@
 
 <footer>
   <div class="wrap">
-    <div class="footer-grid">
-      <div class="brand">Leader <span>Raoul</span></div>
-      <div class="contact-list">
-        <a href="tel:+22788215778"><i data-lucide="phone"></i> (+227) 88 21 57 78</a>
-        <a href="https://wa.me/22788215778" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> WhatsApp</a>
-        <span style="display:flex; align-items:center; gap:8px;"><i data-lucide="map-pin" style="width:16px;height:16px;"></i> Niamey, Niger</span>
+    <div class="footer-grid" style="align-items:flex-start;">
+      <div>
+        <div class="brand" style="margin-bottom:14px;"><span class="logo-mark">LR</span>Leader <span>Raoul</span></div>
+        <p style="font-size:0.85rem; font-weight:600; margin-bottom:10px; color:var(--muted);">Restons connectés</p>
+        <div class="contact-list">
+          <a href="tel:+22788215778"><i data-lucide="phone"></i> (+227) 88 21 57 78</a>
+          <a href="https://wa.me/22788215778" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> WhatsApp</a>
+          <a href="#" data-fb-placeholder="true"><i data-lucide="facebook"></i> Facebook</a>
+          <span style="display:flex; align-items:center; gap:8px;"><i data-lucide="map-pin" style="width:16px;height:16px;"></i> Niamey, Niger</span>
+        </div>
+      </div>
+      <div>
+        <p style="font-size:0.85rem; font-weight:600; margin-bottom:10px; color:var(--muted);">Liens rapides</p>
+        <div class="contact-list">
+          <a href="#hero">Accueil</a>
+          <a href="#apropos">À propos</a>
+          <a href="#livre">Livre</a>
+          <a href="#oratoire">Formation</a>
+          <a href="#coaching">Coaching</a>
+        </div>
       </div>
       <a class="btn btn-primary" href="https://wa.me/22788215778" target="_blank" rel="noopener">Démarrer la conversation</a>
     </div>
-    <p class="fine">© Leader Raoul Officiel — Niamey, Niger</p>
+    <p class="fine">© 2026 Leader Raoul Officiel — Niamey, Niger</p>
   </div>
 </footer>
 
