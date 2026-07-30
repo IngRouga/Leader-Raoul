@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leader Raoul — Coach en Leadership & Art Oratoire | Niamey</title>
-<meta name="description" content="Kossi M. Badohoun — Leader Raoul. Coach en développement personnel et leadership, formateur en art oratoire, auteur de « Osez Réaliser Vos Rêves ». Basé à Niamey, Niger.">
+<meta name="description" content="Kossi M. Badohoun — Leader Raoul. Coach en leadership, formateur en art oratoire et auteur de « Osez Réaliser Vos Rêves ». Transformez votre prise de parole en force de leadership, à Niamey.">
 <meta name="theme-color" content="#0F172A">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Leader Raoul — Coach en Leadership & Art Oratoire">
-<meta property="og:description" content="Formation en art oratoire, coaching personnalisé et livre inspirant, par Kossi M. Badohoun (Leader Raoul), à Niamey.">
+<meta property="og:title" content="Leader Raoul — La parole qui convainc, le leadership qui s'impose">
+<meta property="og:description" content="Formation en art oratoire, coaching de leadership et livre inspirant, par Kossi M. Badohoun (Leader Raoul), à Niamey.">
 <meta property="og:image" content="https://i.ibb.co/s90jvf9M/bio-portrait.jpg">
 <meta property="og:locale" content="fr_FR">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Leader Raoul — Coach en Leadership & Art Oratoire">
-<meta name="twitter:description" content="Formation en art oratoire, coaching personnalisé et livre inspirant, à Niamey.">
+<meta name="twitter:title" content="Leader Raoul — La parole qui convainc, le leadership qui s'impose">
+<meta name="twitter:description" content="Formation en art oratoire, coaching de leadership et livre inspirant, à Niamey.">
 <meta name="twitter:image" content="https://i.ibb.co/s90jvf9M/bio-portrait.jpg">
 
 <script type="application/ld+json">
@@ -88,7 +88,32 @@
   .nav-links a::after{content:""; position:absolute; left:0; bottom:-4px; width:0; height:1px; background:var(--accent); transition:width .25s;}
   .nav-links a:hover{color:var(--text);}
   .nav-links a:hover::after{width:100%;}
-  @media (max-width:720px){ .nav-links{display:none;} }
+  .nav-toggle{display:none; background:none; border:none; color:var(--text); padding:8px; cursor:pointer;}
+  .nav-toggle i{width:22px; height:22px;}
+  .nav-mobile-panel{
+    display:none; position:fixed; top:74px; left:50%; transform:translateX(-50%);
+    width:min(920px, calc(100% - 32px)); z-index:99;
+    background:rgba(15,23,42,0.96); backdrop-filter:blur(16px);
+    border:1px solid var(--glass-border); border-radius:20px;
+    padding:10px; flex-direction:column; box-shadow:0 20px 44px -12px rgba(0,0,0,0.6);
+  }
+  .nav-mobile-panel.open{display:flex;}
+  .nav-mobile-panel a{
+    padding:14px 16px; border-radius:12px; font-size:0.98rem; font-weight:500; color:var(--text);
+    min-height:44px; display:flex; align-items:center;
+  }
+  .nav-mobile-panel a:hover{background:var(--glass);}
+  @media (max-width:720px){
+    .nav-links{display:none;}
+    .nav-toggle{display:inline-flex;}
+  }
+  @media (max-width:600px){
+    section{padding:72px 0;}
+    .hero{padding:130px 0 70px;}
+    .hero-ctas{flex-direction:column; align-items:stretch;}
+    .hero-ctas .btn{width:100%; justify-content:center; min-height:48px;}
+    .btn{min-height:48px;}
+  }
   .nav-cta{
     font-size:0.82rem; font-weight:600;
     background:var(--accent); color:#06281f;
@@ -266,7 +291,20 @@
   .contact-list i{width:16px; height:16px;}
   .fine{color:var(--muted); font-size:0.8rem;}
 
-  /* focus visibility for a11y */
+  @media (max-width:600px){
+    nav{padding:10px 16px; width:calc(100% - 24px); top:10px;}
+    .brand{font-size:0.92rem;}
+    section{padding:64px 0;}
+    .hero{padding:104px 0 56px; min-height:auto;}
+    .hero-ctas{flex-direction:column; align-items:stretch;}
+    .hero-ctas .btn{width:100%; justify-content:center; padding:16px 24px;}
+    .section-head{margin-bottom:32px;}
+    .card{padding:26px 22px;}
+    .book-panel{padding:24px;}
+    footer .footer-grid{flex-direction:column; align-items:flex-start;}
+    footer .btn{width:100%; justify-content:center;}
+  }
+
   a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:6px;}
 </style>
 </head>
@@ -280,19 +318,30 @@
     <a href="#livre">Livre</a>
     <a href="#apropos">À propos</a>
   </div>
-  <a class="nav-cta" href="https://wa.me/22788215778" target="_blank" rel="noopener">WhatsApp</a>
+  <div style="display:flex; align-items:center; gap:6px;">
+    <a class="nav-cta" href="https://wa.me/22788215778" target="_blank" rel="noopener">Démarrer</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMobilePanel">
+      <i data-lucide="menu" id="navToggleIcon"></i>
+    </button>
+  </div>
 </nav>
+<div class="nav-mobile-panel" id="navMobilePanel">
+  <a href="#oratoire">Formation</a>
+  <a href="#coaching">Coaching</a>
+  <a href="#livre">Livre</a>
+  <a href="#apropos">À propos</a>
+</div>
 
 <header class="hero">
   <div class="blob blob-1" aria-hidden="true"></div>
   <div class="blob blob-2" aria-hidden="true"></div>
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow reveal in-view"><i data-lucide="mic" style="width:14px;height:14px;"></i> Coach · Formateur · Auteur</span>
-      <h1 class="reveal in-view">Trouvez votre voix.<br>Devenez le <span class="grad">leader</span> qu'on écoute.</h1>
-      <p class="lede reveal in-view">Depuis Niamey, Kossi M. Badohoun — Leader Raoul — accompagne des professionnels et des porteurs de projets à structurer leur pensée, maîtriser la parole en public et diriger avec assurance.</p>
+      <span class="eyebrow reveal in-view"><i data-lucide="mic" style="width:14px;height:14px;"></i> Coach en leadership · Formateur en art oratoire · Auteur d'un livre publié</span>
+      <h1 class="reveal in-view">La parole qui convainc.<br>Le <span class="grad">leadership</span> qui s'impose.</h1>
+      <p class="lede reveal in-view">Kossi M. Badohoun — Leader Raoul — aide dirigeants, entrepreneurs et professionnels de Niamey à transformer leur prise de parole en véritable force de leadership. Une méthode concrète, un accompagnement humain, des résultats mesurables sur votre confiance.</p>
       <div class="hero-ctas reveal in-view">
-        <a class="btn btn-primary" href="https://wa.me/22788215778" target="_blank" rel="noopener">Prendre contact <i data-lucide="arrow-right" style="width:18px;height:18px;"></i></a>
+        <a class="btn btn-primary" href="https://wa.me/22788215778" target="_blank" rel="noopener">Démarrer la conversation <i data-lucide="arrow-right" style="width:18px;height:18px;"></i></a>
         <a class="btn btn-ghost" href="#livre">Découvrir le livre</a>
       </div>
       <div class="stats-row reveal in-view">
@@ -306,7 +355,7 @@
         <img src="https://i.ibb.co/s90jvf9M/bio-portrait.jpg" alt="Leader Raoul en pleine intervention">
       </div>
       <div class="float-chip a"><i data-lucide="award"></i> Formateur IGA</div>
-      <div class="float-chip b"><i data-lucide="book-open"></i> Auteur publié</div>
+      <div class="float-chip b"><i data-lucide="book-open"></i> Livre publié</div>
     </div>
   </div>
 </header>
@@ -315,13 +364,13 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">Formation · Impact Global Academy</span>
-      <h2>2 weekends pour maîtriser l'art oratoire</h2>
-      <p>Un parcours pratique et intensif pour parler avec clarté, assurance et impact — devant un jury, une équipe, ou une salle entière.</p>
+      <h2>Parler en public ne devrait jamais vous freiner.</h2>
+      <p>Beaucoup d'idées excellentes restent invisibles parce que la peur de s'exprimer prend le dessus. En 2 weekends intensifs, vous apprenez à transformer cette peur en présence — pour être entendu, chaque fois que ça compte.</p>
     </div>
     <div class="card-grid">
-      <div class="card reveal"><div class="icon-wrap"><i data-lucide="shield"></i></div><h3>Confiance et affirmation de soi</h3><p>Poser sa voix, gérer la peur et le trac, rester serein face au public.</p></div>
-      <div class="card reveal"><div class="icon-wrap"><i data-lucide="waves"></i></div><h3>Le pouvoir de la parole</h3><p>Les 11 qualités des tops orateurs et la gestion de la voix, du corps et du regard.</p></div>
-      <div class="card reveal"><div class="icon-wrap"><i data-lucide="target"></i></div><h3>Captiver et convaincre</h3><p>5 techniques pour capter l'attention, structurer sa présentation, et les secrets de la négociation.</p></div>
+      <div class="card reveal"><div class="icon-wrap"><i data-lucide="shield"></i></div><h3>Sortir du trac, entrer dans l'aisance</h3><p>Le trac isole et fait perdre des opportunités. Vous apprenez à le gérer et à parler avec un calme naturel, même sous pression.</p></div>
+      <div class="card reveal"><div class="icon-wrap"><i data-lucide="waves"></i></div><h3>Une voix qui porte, une présence qui marque</h3><p>La voix, le corps et le regard font autant que les mots. Vous travaillez les 11 qualités des grands orateurs pour qu'on vous écoute vraiment.</p></div>
+      <div class="card reveal"><div class="icon-wrap"><i data-lucide="target"></i></div><h3>Des messages qui convainquent</h3><p>Une bonne idée mal structurée passe inaperçue. Vous apprenez à construire une présentation claire et à négocier avec assurance.</p></div>
     </div>
     <div class="price-row reveal">
       <div class="price-card"><div class="amount">10 000 F CFA</div><div class="label">Inscription</div></div>
@@ -338,9 +387,9 @@
 <section id="coaching" class="section-alt">
   <div class="wrap split">
     <div class="reveal">
-      <span class="eyebrow">Accompagnement</span>
-      <h2>Un coaching personnalisé, taillé pour vous.</h2>
-      <p>Chaque parcours est individuel : on part de votre situation réelle — un objectif professionnel, une équipe à diriger, une image de leader à construire — pour avancer par étapes concrètes.</p>
+      <span class="eyebrow">Accompagnement individuel</span>
+      <h2>Le leadership ne s'improvise pas. Il se construit.</h2>
+      <p>Diriger une équipe, porter un projet, incarner une posture de leader : chaque situation a ses propres obstacles. Ce coaching part de votre réalité — pas d'un programme générique — pour vous donner des étapes concrètes, mesurables, et un accompagnement qui reste à vos côtés au-delà des séances.</p>
       <div class="includes" style="justify-content:flex-start;">
         <span class="badge"><i data-lucide="sprout"></i> Développement personnel</span>
         <span class="badge"><i data-lucide="users"></i> Leadership</span>
@@ -356,14 +405,14 @@
     <div class="section-head reveal">
       <span class="eyebrow">Publication</span>
       <h2>Osez Réaliser Vos Rêves</h2>
-      <p>Les idées clés de sa méthode, en 12 chapitres, à emporter partout.</p>
+      <p>Un guide en 12 chapitres pour ceux qui refusent de laisser leurs rêves de côté — à lire une fois, à relire chaque fois que le doute revient.</p>
     </div>
     <div class="book-panel reveal">
       <img src="https://i.ibb.co/0ycK0394/livre-cover.jpg" alt="Couverture du livre Osez Réaliser Vos Rêves">
       <div>
         <h3 style="font-size:1.2rem; margin-bottom:6px;">Osez Réaliser Vos Rêves</h3>
         <p style="color:var(--muted); font-size:0.9rem; margin-bottom:14px;">Par Kossi M. Badohoun — préfacé par Alabibou Issaka Hamidou</p>
-        <p style="color:var(--muted);">Des clés pour éveiller son potentiel intérieur, se forger un mental solide et tenir face aux obstacles jusqu'à concrétiser ses rêves.</p>
+        <p style="color:var(--muted);">Ce livre s'adresse à ceux qui sentent leur potentiel bridé par le doute ou les obstacles. Il donne des clés concrètes pour se forger un mental solide, tenir malgré les épreuves, et avancer jusqu'à concrétiser ce qui comptait vraiment.</p>
         <ol class="chapters">
           <li data-n="01">Accrochez-vous à vos rêves</li>
           <li data-n="02">De la motivation à la réalisation</li>
@@ -389,26 +438,13 @@
 <section class="section-alt">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Témoignages</span>
-      <h2>Ce que retiennent les participants</h2>
+      <span class="eyebrow">Crédibilité</span>
+      <h2>Une expertise construite sur le terrain</h2>
     </div>
-    <div class="testi-grid">
-      <div class="testi-card reveal">
-        <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
-        <p class="quote">« Un accompagnement qui pousse à agir, pas seulement à réfléchir. »</p>
-        <div class="testi-person"><div class="avatar">A.</div><div><div class="name">Participant</div><div class="role">Formation art oratoire</div></div></div>
-      </div>
-      <div class="testi-card reveal">
-        <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
-        <p class="quote">« J'ai enfin osé prendre la parole devant mon équipe sans trembler. »</p>
-        <div class="testi-person"><div class="avatar">M.</div><div><div class="name">Participante</div><div class="role">Coaching personnalisé</div></div></div>
-      </div>
-      <div class="testi-card reveal">
-        <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
-        <p class="quote">« Le livre m'a redonné une méthode claire pour avancer. »</p>
-        <div class="testi-person"><div class="avatar">S.</div><div><div class="name">Lecteur</div><div class="role">Osez Réaliser Vos Rêves</div></div></div>
-      </div>
-      <p class="testi-note">.</p>
+    <div class="card-grid">
+      <div class="card reveal"><div class="icon-wrap"><i data-lucide="graduation-cap"></i></div><h3>Formation certifiée</h3><p>Programme dispensé sous la bannière Impact Global Academy (IGA), avec attestation de participation remise à chaque session.</p></div>
+      <div class="card reveal"><div class="icon-wrap"><i data-lucide="book-open"></i></div><h3>Auteur d'un livre publié</h3><p>« Osez Réaliser Vos Rêves », préfacé par Alabibou Issaka Hamidou — 12 chapitres sur la persévérance et le dépassement de soi.</p></div>
+      <div class="card reveal"><div class="icon-wrap"><i data-lucide="users"></i></div><h3>Une communauté engagée</h3><p>Plus de 2 000 personnes suivent son travail et ses interventions à travers le pays.</p></div>
     </div>
   </div>
 </section>
@@ -418,8 +454,25 @@
     <div class="section-head reveal">
       <span class="eyebrow">À propos</span>
       <h2>Leader Raoul</h2>
-      <p>Kossi M. Badohoun, coach en développement personnel et en leadership, formateur en art oratoire, auteur et speaker d'inspiration et de motivation, basé à Niamey. Une conviction simple guide chaque intervention : la parole bien posée est le premier outil du leader.</p>
     </div>
+    <div class="card-grid" style="margin-bottom:56px;">
+      <div class="card reveal">
+        <div class="icon-wrap"><i data-lucide="user"></i></div>
+        <h3>Qui il est</h3>
+        <p>Kossi M. Badohoun, connu sous le nom de Leader Raoul, est coach en développement personnel et en leadership, formateur en art oratoire, auteur et speaker basé à Niamey.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-wrap"><i data-lucide="compass"></i></div>
+        <h3>Sa vision</h3>
+        <p>Un leader ne s'impose pas par le titre, mais par la clarté de sa parole et la solidité de son mental face aux épreuves.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-wrap"><i data-lucide="flag"></i></div>
+        <h3>Sa mission</h3>
+        <p>Donner à chacun les outils concrets — voix, posture, méthode — pour transformer sa prise de parole en véritable levier de leadership.</p>
+      </div>
+    </div>
+    <p class="reveal" style="max-width:62ch; margin:0 auto 44px; text-align:center; color:var(--muted); font-size:1.02rem;">Une conviction guide chaque intervention : la parole bien posée est le premier outil du leader.</p>
     <div class="gallery-viewport reveal">
       <div class="gallery-track">
         <figure><img src="https://i.ibb.co/rfQHmczB/remise-attestation-1.jpg" alt="Remise d'attestations aux participants de la formation IGA"><figcaption>Remise des attestations — IGA</figcaption></figure>
@@ -444,18 +497,34 @@
         <a href="https://wa.me/22788215778" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> WhatsApp</a>
         <span style="display:flex; align-items:center; gap:8px;"><i data-lucide="map-pin" style="width:16px;height:16px;"></i> Niamey, Niger</span>
       </div>
-      <a class="btn btn-primary" href="https://wa.me/22788215778" target="_blank" rel="noopener">Réserver un échange</a>
+      <a class="btn btn-primary" href="https://wa.me/22788215778" target="_blank" rel="noopener">Démarrer la conversation</a>
     </div>
     <p class="fine">© Leader Raoul Officiel — Niamey, Niger</p>
   </div>
 </footer>
 
 <script>
+  function initIcons(){ if (typeof lucide !== 'undefined') lucide.createIcons(); }
   if (typeof lucide !== 'undefined') {
     lucide.createIcons();
   } else {
-    window.addEventListener('load', () => { if (typeof lucide !== 'undefined') lucide.createIcons(); });
+    window.addEventListener('load', initIcons);
   }
+
+  const navToggle = document.getElementById('navToggle');
+  const navPanel = document.getElementById('navMobilePanel');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navPanel.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    navToggle.innerHTML = isOpen ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
+    initIcons();
+  });
+  navPanel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navPanel.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.innerHTML = '<i data-lucide="menu"></i>';
+    initIcons();
+  }));
 
   // Reveal on scroll
   const revealEls = document.querySelectorAll('.reveal');
