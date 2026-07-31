@@ -10,13 +10,13 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Leader Raoul — La parole qui convainc, le leadership qui s'impose">
 <meta property="og:description" content="Formation en art oratoire, coaching de leadership et livre inspirant, par Kossi M. Badohoun (Leader Raoul), à Niamey.">
-<meta property="og:image" content="https://i.ibb.co/s90jvf9M/bio-portrait.jpg">
+<meta property="og:image" content="https://i.ibb.co/0y8DvYgH/Screenshot-20260730-172527.jpg">
 <meta property="og:locale" content="fr_FR">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Leader Raoul — La parole qui convainc, le leadership qui s'impose">
 <meta name="twitter:description" content="Formation en art oratoire, coaching de leadership et livre inspirant, à Niamey.">
-<meta name="twitter:image" content="https://i.ibb.co/s90jvf9M/bio-portrait.jpg">
+<meta name="twitter:image" content="https://i.ibb.co/0y8DvYgH/Screenshot-20260730-172527.jpg">
 
 <script type="application/ld+json">
 {
@@ -112,6 +112,17 @@
     .nav-toggle{display:inline-flex;}
   }
   @media (max-width:600px){
+    .nav-cta{padding:8px 12px; font-size:0.74rem;}
+  }
+  @media (max-width:400px){
+    .nav-cta{padding:7px 10px;}
+  }
+  .nav-cta-short{display:none;}
+  @media (max-width:600px){
+    .nav-cta-full{display:none;}
+    .nav-cta-short{display:inline;}
+  }
+  @media (max-width:600px){
     section{padding:72px 0;}
     .hero{padding:130px 0 70px;}
     .hero-ctas{flex-direction:column; align-items:stretch;}
@@ -123,6 +134,7 @@
     background:var(--accent); color:#06281f;
     padding:9px 18px; border-radius:999px;
     transition:transform .2s, box-shadow .2s;
+    white-space:nowrap;
   }
   .nav-cta:hover{transform:translateY(-2px); box-shadow:0 8px 24px -6px rgba(16,185,129,0.55);}
 
@@ -330,9 +342,10 @@
     <a href="#livre">Livre</a>
     <a href="#oratoire">Formation</a>
     <a href="#coaching">Coaching</a>
+    <a href="#contact">Contact</a>
   </div>
   <div style="display:flex; align-items:center; gap:6px;">
-    <a class="nav-cta" href="#livre">Se procurer le livre</a>
+    <a class="nav-cta" href="#livre"><span class="nav-cta-full">Se procurer le livre</span><span class="nav-cta-short">Le livre</span></a>
     <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMobilePanel">
       <i data-lucide="menu" id="navToggleIcon"></i>
     </button>
@@ -344,6 +357,7 @@
   <a href="#livre">Livre</a>
   <a href="#oratoire">Formation</a>
   <a href="#coaching">Coaching</a>
+  <a href="#contact">Contact</a>
 </div>
 
 <header class="hero" id="hero">
@@ -366,7 +380,7 @@
     </div>
     <div class="hero-visual reveal in-view">
       <div class="frame">
-        <img src="https://i.ibb.co/s90jvf9M/bio-portrait.jpg" alt="Leader Raoul en pleine intervention">
+        <img src="https://i.ibb.co/0y8DvYgH/Screenshot-20260730-172527.jpg" alt="Leader Raoul en pleine intervention">
       </div>
       <div class="float-chip a"><i data-lucide="award"></i> Formateur IGA</div>
       <div class="float-chip b"><i data-lucide="book-open"></i> Livre publié</div>
@@ -486,12 +500,11 @@
       <span class="eyebrow">À propos</span>
       <h2>Leader Raoul</h2>
     </div>
+    <div class="split reveal" style="margin-bottom:56px; align-items:center;">
+      <img src="https://i.ibb.co/0y8DvYgH/Screenshot-20260730-172527.jpg" alt="Kossi M. Badohoun, Leader Raoul" style="border-radius:22px; border:1px solid var(--glass-border); box-shadow:0 30px 60px -24px rgba(0,0,0,0.6);">
+      <p style="color:var(--muted); font-size:1.05rem;">Kossi M. Badohoun, connu sous le nom de Leader Raoul, est coach en développement personnel et en leadership, formateur en art oratoire, auteur et speaker basé à Niamey.</p>
+    </div>
     <div class="card-grid" style="margin-bottom:56px;">
-      <div class="card reveal">
-        <div class="icon-wrap"><i data-lucide="user"></i></div>
-        <h3>Qui il est</h3>
-        <p>Kossi M. Badohoun, connu sous le nom de Leader Raoul, est coach en développement personnel et en leadership, formateur en art oratoire, auteur et speaker basé à Niamey.</p>
-      </div>
       <div class="card reveal">
         <div class="icon-wrap"><i data-lucide="compass"></i></div>
         <h3>Sa vision</h3>
@@ -519,7 +532,7 @@
   </div>
 </section>
 
-<footer>
+<footer id="contact">
   <div class="wrap">
     <div class="footer-grid" style="align-items:flex-start;">
       <div>
@@ -528,7 +541,7 @@
         <div class="contact-list">
           <a href="tel:+22788215778"><i data-lucide="phone"></i> (+227) 88 21 57 78</a>
           <a href="https://wa.me/22788215778" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> WhatsApp</a>
-          <a href="#" data-fb-placeholder="true"><i data-lucide="facebook"></i> Facebook</a>
+          <a href="https://www.facebook.com/share/1FAP2YbQU4/" target="_blank" rel="noopener"><i data-lucide="facebook"></i> Facebook</a>
           <span style="display:flex; align-items:center; gap:8px;"><i data-lucide="map-pin" style="width:16px;height:16px;"></i> Niamey, Niger</span>
         </div>
       </div>
