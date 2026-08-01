@@ -3,616 +3,154 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leader Raoul — Coach en Leadership & Art Oratoire | Niamey</title>
-<meta name="description" content="Kossi M. Badohoun — Leader Raoul. Coach en leadership, formateur en art oratoire et auteur de « Osez Réaliser Vos Rêves ». Transformez votre prise de parole en force de leadership, à Niamey.">
-<meta name="theme-color" content="#0F172A">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Leader Raoul — La parole qui convainc, le leadership qui s'impose">
-<meta property="og:description" content="Formation en art oratoire, coaching de leadership et livre inspirant, par Kossi M. Badohoun (Leader Raoul), à Niamey.">
-<meta property="og:image" content="https://i.ibb.co/0y8DvYgH/Screenshot-20260730-172527.jpg">
-<meta property="og:locale" content="fr_FR">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Leader Raoul — La parole qui convainc, le leadership qui s'impose">
-<meta name="twitter:description" content="Formation en art oratoire, coaching de leadership et livre inspirant, à Niamey.">
-<meta name="twitter:image" content="https://i.ibb.co/0y8DvYgH/Screenshot-20260730-172527.jpg">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Kossi M. Badohoun",
-  "alternateName": "Leader Raoul",
-  "jobTitle": "Coach en développement personnel et leadership",
-  "address": {"@type": "PostalAddress", "addressLocality": "Niamey", "addressCountry": "NE"},
-  "telephone": "+22788215778",
-  "sameAs": ["https://wa.me/22788215778"]
-}
-</script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/lucide@latest" defer></script>
+<title>Site non visible</title>
 <style>
   :root{
-    --bg:#0F172A;
-    --bg-alt:#111d33;
-    --accent:#10B981;
-    --accent-soft:rgba(16,185,129,0.16);
-    --text:#F8FAFC;
-    --muted:#94A3B8;
-    --glass:rgba(255,255,255,0.05);
-    --glass-border:rgba(255,255,255,0.10);
-    --radius:22px;
+    --bg:#12131A;
+    --bg2:#191B24;
+    --text:#EDEAE3;
+    --muted:#8B8D98;
+    --amber:#F2A93B;
+    --green:#3FBF8F;
+    --line:#2A2C38;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth;}
   body{
     background:var(--bg);
     color:var(--text);
-    font-family:'Inter', sans-serif;
-    line-height:1.65;
-    overflow-x:hidden;
-    -webkit-font-smoothing:antialiased;
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
   }
-  h1,h2,h3{font-family:'Sora', sans-serif; font-weight:700; letter-spacing:-0.02em; line-height:1.1;}
-  a{color:inherit; text-decoration:none;}
-  img{max-width:100%; display:block;}
-  .wrap{max-width:1200px; margin:0 auto; padding:0 24px;}
-  ::selection{background:var(--accent); color:#0F172A;}
-
-  /* ---------- Reveal animation ---------- */
-  .reveal{opacity:0; transform:translateY(28px); transition:opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1);}
-  .reveal.in-view{opacity:1; transform:translateY(0);}
-  @media (prefers-reduced-motion: reduce){ .reveal{opacity:1; transform:none; transition:none;} }
-
-  /* ---------- Navbar ---------- */
-  nav{
-    position:fixed; top:16px; left:50%; transform:translateX(-50%); z-index:100;
-    width:min(920px, calc(100% - 32px));
-    display:flex; align-items:center; justify-content:space-between;
-    padding:12px 20px;
-    background:rgba(15,23,42,0.65);
-    backdrop-filter:blur(16px) saturate(160%);
-    -webkit-backdrop-filter:blur(16px) saturate(160%);
-    border:1px solid var(--glass-border);
-    border-radius:999px;
-    box-shadow:0 8px 32px -8px rgba(0,0,0,0.5);
-  }
-  .brand{font-family:'Sora'; font-weight:700; font-size:1rem; display:flex; align-items:center; gap:8px;}
-  .logo-mark{
-    width:28px; height:28px; border-radius:8px; background:linear-gradient(135deg, var(--accent), #34d399);
-    color:#06281f; font-size:0.72rem; font-weight:800; display:flex; align-items:center; justify-content:center;
-  }
-  .brand span{color:var(--accent);}
-  .nav-links{display:flex; gap:28px; font-size:0.88rem; font-weight:500;}
-  .nav-links a{color:var(--muted); position:relative; transition:color .2s;}
-  .nav-links a::after{content:""; position:absolute; left:0; bottom:-4px; width:0; height:1px; background:var(--accent); transition:width .25s;}
-  .nav-links a:hover{color:var(--text);}
-  .nav-links a:hover::after{width:100%;}
-  .nav-toggle{display:none; background:none; border:none; color:var(--text); padding:8px; cursor:pointer;}
-  .nav-toggle i{width:22px; height:22px;}
-  .nav-mobile-panel{
-    display:none; position:fixed; top:74px; left:50%; transform:translateX(-50%);
-    width:min(920px, calc(100% - 32px)); z-index:99;
-    background:rgba(15,23,42,0.96); backdrop-filter:blur(16px);
-    border:1px solid var(--glass-border); border-radius:20px;
-    padding:10px; flex-direction:column; box-shadow:0 20px 44px -12px rgba(0,0,0,0.6);
-  }
-  .nav-mobile-panel.open{display:flex;}
-  .nav-mobile-panel a{
-    padding:14px 16px; border-radius:12px; font-size:0.98rem; font-weight:500; color:var(--text);
-    min-height:44px; display:flex; align-items:center;
-  }
-  .nav-mobile-panel a:hover{background:var(--glass);}
-  @media (max-width:720px){
-    .nav-links{display:none;}
-    .nav-toggle{display:inline-flex;}
-  }
-  @media (max-width:600px){
-    .nav-cta{padding:8px 12px; font-size:0.74rem;}
-  }
-  @media (max-width:400px){
-    .nav-cta{padding:7px 10px;}
-  }
-  .nav-cta-short{display:none;}
-  @media (max-width:600px){
-    .nav-cta-full{display:none;}
-    .nav-cta-short{display:inline;}
-  }
-  @media (max-width:600px){
-    section{padding:72px 0;}
-    .hero{padding:130px 0 70px;}
-    .hero-ctas{flex-direction:column; align-items:stretch;}
-    .hero-ctas .btn{width:100%; justify-content:center; min-height:48px;}
-    .btn{min-height:48px;}
-  }
-  .nav-cta{
-    font-size:0.82rem; font-weight:600;
-    background:var(--accent); color:#06281f;
-    padding:9px 18px; border-radius:999px;
-    transition:transform .2s, box-shadow .2s;
-    white-space:nowrap;
-  }
-  .nav-cta:hover{transform:translateY(-2px); box-shadow:0 8px 24px -6px rgba(16,185,129,0.55);}
-
-  /* ---------- Buttons ---------- */
-  .btn{
-    display:inline-flex; align-items:center; gap:8px;
-    padding:15px 30px; border-radius:999px;
-    font-weight:600; font-size:0.95rem;
-    transition:transform .25s cubic-bezier(.16,1,.3,1), box-shadow .25s ease, background .25s ease;
-  }
-  .btn-primary{background:var(--accent); color:#06281f; box-shadow:0 8px 24px -8px rgba(16,185,129,0.5);}
-  .btn-primary:hover{transform:translateY(-3px); box-shadow:0 16px 36px -10px rgba(16,185,129,0.65);}
-  .btn-ghost{border:1px solid var(--glass-border); color:var(--text); background:var(--glass);}
-  .btn-ghost:hover{transform:translateY(-3px); border-color:rgba(255,255,255,0.24); background:rgba(255,255,255,0.08);}
-
-  /* ---------- Hero ---------- */
-  .hero{
-    position:relative; min-height:100svh; display:flex; align-items:center;
-    padding:150px 0 100px; overflow:hidden;
-  }
-  .blob{
-    position:absolute; border-radius:50%; filter:blur(90px); opacity:0.35; pointer-events:none;
-    animation:float 12s ease-in-out infinite;
-  }
-  .blob-1{width:520px; height:520px; background:var(--accent); top:-140px; left:-120px;}
-  .blob-2{width:460px; height:460px; background:#3B82F6; bottom:-160px; right:-100px; animation-delay:-4s;}
-  @keyframes float{
-    0%,100%{transform:translate(0,0) scale(1);}
-    50%{transform:translate(30px,-20px) scale(1.06);}
-  }
-  @media (prefers-reduced-motion: reduce){ .blob{animation:none;} }
-
-  .hero-grid{position:relative; z-index:2; display:grid; grid-template-columns:1.1fr 0.9fr; gap:60px; align-items:center; width:100%;}
-  @media (max-width:860px){ .hero-grid{grid-template-columns:1fr;} .hero-visual{order:-1; max-width:280px; margin:0 auto;} }
-
-  .eyebrow{
-    display:inline-flex; align-items:center; gap:8px;
-    font-size:0.8rem; font-weight:600; color:var(--accent);
-    background:var(--accent-soft); border:1px solid rgba(16,185,129,0.3);
-    padding:7px 16px; border-radius:999px; margin-bottom:22px;
-  }
-  .hero h1{font-size:clamp(2.4rem, 5.6vw, 4.2rem); margin-bottom:22px;}
-  .hero h1 .grad{background:linear-gradient(135deg, var(--accent), #34d399 60%, #6ee7b7); -webkit-background-clip:text; background-clip:text; color:transparent;}
-  .hero p.lede{font-size:clamp(1.02rem, 1.4vw, 1.18rem); color:var(--muted); max-width:52ch; margin-bottom:36px;}
-  .hero-ctas{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:52px;}
-
-  .stats-row{display:grid; grid-template-columns:repeat(3, 1fr); gap:16px;}
-  @media (max-width:520px){ .stats-row{grid-template-columns:1fr; max-width:220px;} }
-
-  .value-strip{padding:52px 0; border-top:1px solid var(--glass-border); border-bottom:1px solid var(--glass-border);}
-  .value-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:24px; text-align:center;}
-  @media (max-width:820px){ .value-grid{grid-template-columns:repeat(3,1fr);} }
-  @media (max-width:520px){ .value-grid{grid-template-columns:repeat(2,1fr);} }
-  .value-item i{width:26px; height:26px; color:var(--accent); margin-bottom:12px;}
-  .value-item h4{font-family:'Sora'; font-size:0.92rem; margin-bottom:4px;}
-  .value-item p{font-size:0.78rem; color:var(--muted);}
-  .stat-card{
-    background:var(--glass); border:1px solid var(--glass-border); border-radius:18px;
-    padding:20px 18px; backdrop-filter:blur(10px);
-  }
-  .stat-card .num{font-family:'Sora'; font-weight:800; font-size:clamp(1.5rem,2.4vw,2rem); color:var(--text);}
-  .stat-card .lbl{font-size:0.78rem; color:var(--muted); margin-top:4px;}
-
-  .hero-visual{position:relative;}
-  .hero-visual .frame{
-    position:relative; border-radius:28px; overflow:hidden; border:1px solid var(--glass-border);
-    box-shadow:0 40px 80px -30px rgba(0,0,0,0.7);
-  }
-  .hero-visual img{width:100%; aspect-ratio:4/5; object-fit:cover; object-position:70% 20%;}
-  .float-chip{
-    position:absolute; display:flex; align-items:center; gap:8px;
-    background:rgba(15,23,42,0.85); border:1px solid var(--glass-border); backdrop-filter:blur(12px);
-    padding:10px 16px; border-radius:14px; font-size:0.8rem; font-weight:600;
-    box-shadow:0 12px 28px -10px rgba(0,0,0,0.6);
-    animation:chip-float 5s ease-in-out infinite;
-  }
-  .float-chip.a{top:8%; left:-10%; animation-delay:0s;}
-  .float-chip.b{bottom:10%; right:-8%; animation-delay:-2.4s;}
-  .float-chip i{width:16px; height:16px; color:var(--accent);}
-  @keyframes chip-float{0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);}}
-  @media (max-width:860px){ .float-chip{display:none;} }
-
-  /* ---------- Sections ---------- */
-  section{padding:110px 0; position:relative;}
-  .section-alt{background:var(--bg-alt);}
-  .section-head{max-width:62ch; margin:0 auto 56px; text-align:center;}
-  .section-head .eyebrow{display:inline-flex; margin:0 auto 16px;}
-  .section-head h2{font-size:clamp(1.8rem, 3.6vw, 2.6rem); margin-bottom:14px;}
-  .section-head p{color:var(--muted); font-size:1.02rem;}
-
-  /* ---------- Cards ---------- */
-  .card-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:22px;}
   .card{
-    background:var(--glass); border:1px solid var(--glass-border); border-radius:var(--radius);
-    padding:32px 28px; backdrop-filter:blur(10px);
-    transition:transform .35s cubic-bezier(.16,1,.3,1), border-color .35s, box-shadow .35s;
+    max-width:480px;
+    width:100%;
+    background:var(--bg2);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:44px 36px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
   }
-  .card:hover{transform:translateY(-8px) scale(1.015); border-color:rgba(16,185,129,0.4); box-shadow:0 24px 48px -20px rgba(0,0,0,0.55);}
-  .card .icon-wrap{
-    width:48px; height:48px; border-radius:14px; background:var(--accent-soft);
-    display:flex; align-items:center; justify-content:center; margin-bottom:20px;
+  .status{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-family:"SFMono-Regular", Consolas, monospace;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:28px;
   }
-  .card .icon-wrap i{width:22px; height:22px; color:var(--accent);}
-  .card h3{font-size:1.08rem; margin-bottom:10px;}
-  .card p{color:var(--muted); font-size:0.94rem;}
-
-  /* pricing */
-  .price-row{display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin-top:36px;}
-  @media (max-width:560px){ .price-row{grid-template-columns:1fr;} }
-  .price-card{
-    background:linear-gradient(160deg, rgba(16,185,129,0.14), rgba(255,255,255,0.03));
-    border:1px solid var(--glass-border); border-radius:var(--radius); padding:28px;
+  .dot{
+    width:8px;height:8px;border-radius:50%;
+    background:var(--amber);
+    box-shadow:0 0 0 0 rgba(242,169,59,.6);
+    animation:pulse 1.8s infinite;
   }
-  .price-card .amount{font-family:'Sora'; font-weight:800; font-size:2rem; color:var(--accent);}
-  .price-card .label{color:var(--muted); font-size:0.9rem; margin-top:6px;}
-  .includes{display:flex; flex-wrap:wrap; gap:10px; margin-top:28px; justify-content:center;}
-  .badge{
-    font-size:0.78rem; font-weight:500; color:var(--muted);
-    border:1px solid var(--glass-border); background:var(--glass);
-    padding:8px 16px; border-radius:999px; display:inline-flex; align-items:center; gap:6px;
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(242,169,59,.55);}
+    70%{box-shadow:0 0 0 10px rgba(242,169,59,0);}
+    100%{box-shadow:0 0 0 0 rgba(242,169,59,0);}
   }
-  .badge i{width:14px; height:14px; color:var(--accent);}
-
-  /* split */
-  .split{display:grid; grid-template-columns:1.05fr 0.95fr; gap:60px; align-items:center;}
-  @media (max-width:820px){ .split{grid-template-columns:1fr;} }
-  .split img{border-radius:var(--radius); border:1px solid var(--glass-border); box-shadow:0 30px 60px -24px rgba(0,0,0,0.6);}
-  .split h2{font-size:clamp(1.7rem,3.2vw,2.3rem); margin-bottom:16px;}
-  .split p{color:var(--muted); font-size:1.02rem;}
-
-  /* book */
-  .book-panel{
-    background:var(--glass); border:1px solid var(--glass-border); border-radius:28px;
-    padding:44px; display:grid; grid-template-columns:220px 1fr; gap:40px; backdrop-filter:blur(10px);
+  h1{
+    font-size:26px;
+    line-height:1.3;
+    font-weight:800;
+    letter-spacing:-0.01em;
+    margin-bottom:12px;
   }
-  @media (max-width:640px){ .book-panel{grid-template-columns:1fr; padding:28px;} }
-  .book-panel img{border-radius:14px; box-shadow:0 24px 50px -18px rgba(0,0,0,0.6);}
-  .chapters{margin-top:18px; list-style:none; display:grid; gap:9px; font-size:0.9rem; color:var(--muted); grid-template-columns:1fr; max-height:none;}
-  .chapters li{padding-left:30px; position:relative;}
-  .chapters li::before{content:attr(data-n); position:absolute; left:0; top:0; font-family:'Sora'; font-weight:700; color:var(--accent); font-size:0.78rem;}
-
-  /* testimonials */
-  .testi-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:22px;}
-  .testi-card{
-    background:var(--glass); border:1px solid var(--glass-border); border-radius:var(--radius);
-    padding:30px 26px; backdrop-filter:blur(10px);
-    transition:transform .35s cubic-bezier(.16,1,.3,1);
+  h1 span{color:var(--amber);}
+  p.lead{
+    color:var(--muted);
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:32px;
   }
-  .testi-card:hover{transform:translateY(-6px);}
-  .stars{display:flex; gap:3px; margin-bottom:16px;}
-  .stars i{width:16px; height:16px; color:var(--accent); fill:var(--accent);}
-  .testi-card p.quote{color:var(--text); font-size:0.96rem; margin-bottom:20px;}
-  .testi-person{display:flex; align-items:center; gap:12px;}
-  .avatar{
-    width:42px; height:42px; border-radius:50%; background:linear-gradient(135deg, var(--accent), #3B82F6);
-    display:flex; align-items:center; justify-content:center; font-family:'Sora'; font-weight:700; font-size:0.85rem; color:#06281f;
+  .divider{
+    height:1px;
+    background:var(--line);
+    margin:0 0 28px;
   }
-  .testi-person .name{font-size:0.88rem; font-weight:600;}
-  .testi-person .role{font-size:0.76rem; color:var(--muted);}
-  .testi-note{grid-column:1/-1; text-align:center; font-size:0.78rem; color:var(--muted); margin-top:8px;}
-
-  /* gallery carousel */
-  .gallery-viewport{overflow:hidden; -webkit-mask-image:linear-gradient(to right, transparent, black 6%, black 94%, transparent); mask-image:linear-gradient(to right, transparent, black 6%, black 94%, transparent);}
-  .gallery-track{display:flex; gap:16px; width:max-content; animation:scroll-gallery 24s linear infinite;}
-  .gallery-viewport:hover .gallery-track{animation-play-state:paused;}
-  .gallery-track figure{flex:0 0 270px; margin:0; border-radius:18px; overflow:hidden; border:1px solid var(--glass-border); background:var(--glass);}
-  .gallery-track img{aspect-ratio:4/3; object-fit:cover; width:100%;}
-  .gallery-track figcaption{font-size:0.76rem; color:var(--muted); padding:10px 14px; font-weight:500;}
-  @keyframes scroll-gallery{from{transform:translateX(0);} to{transform:translateX(-50%);}}
-  @media (prefers-reduced-motion: reduce){ .gallery-track{animation:none;} }
-
-  /* footer */
-  footer{padding:70px 0 40px; border-top:1px solid var(--glass-border);}
-  .footer-grid{display:flex; flex-wrap:wrap; justify-content:space-between; gap:28px; align-items:center; margin-bottom:40px;}
-  .contact-list{display:flex; flex-direction:column; gap:10px; color:var(--muted); font-size:0.94rem;}
-  .contact-list a{display:flex; align-items:center; gap:8px; transition:color .2s;}
-  .contact-list a:hover{color:var(--accent);}
-  .contact-list i{width:16px; height:16px;}
-  .fine{color:var(--muted); font-size:0.8rem;}
-
-  @media (max-width:600px){
-    nav{padding:10px 16px; width:calc(100% - 24px); top:10px;}
-    .brand{font-size:0.92rem;}
-    section{padding:64px 0;}
-    .hero{padding:104px 0 56px; min-height:auto;}
-    .hero-ctas{flex-direction:column; align-items:stretch;}
-    .hero-ctas .btn{width:100%; justify-content:center; padding:16px 24px;}
-    .section-head{margin-bottom:32px;}
-    .card{padding:26px 22px;}
-    .book-panel{padding:24px;}
-    footer .footer-grid{flex-direction:column; align-items:flex-start;}
-    footer .btn{width:100%; justify-content:center;}
+  .label{
+    font-family:"SFMono-Regular", Consolas, monospace;
+    font-size:11px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--green);
+    margin-bottom:14px;
   }
-
-  a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:6px;}
+  .dev-name{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:22px;
+    letter-spacing:.02em;
+  }
+  .numbers{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  a.number{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    font-family:"SFMono-Regular", Consolas, monospace;
+    font-size:17px;
+    color:var(--text);
+    text-decoration:none;
+    background:#14161F;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:14px 16px;
+    transition:border-color .2s ease, transform .15s ease;
+  }
+  a.number:hover{
+    border-color:var(--green);
+    transform:translateY(-1px);
+  }
+  a.number .flag{
+    font-size:13px;
+    color:var(--muted);
+    letter-spacing:.05em;
+  }
+  .footer-tag{
+    margin-top:28px;
+    font-size:11px;
+    color:var(--muted);
+    letter-spacing:.05em;
+  }
+  @media (prefers-reduced-motion: reduce){
+    .dot{animation:none;}
+  }
 </style>
 </head>
 <body>
 
-<nav aria-label="Navigation principale">
-  <div class="brand"><span class="logo-mark">LR</span>Leader <span>Raoul</span></div>
-  <div class="nav-links">
-    <a href="#hero">Accueil</a>
-    <a href="#apropos">À propos</a>
-    <a href="#livre">Livre</a>
-    <a href="#oratoire">Formation</a>
-    <a href="#coaching">Coaching</a>
-    <a href="#contact">Contact</a>
+  <div class="card">
+    <div class="status"><span class="dot"></span> Site non visible</div>
+
+    <h1>Ce site n'est pas encore <span>visible</span> sur internet.</h1>
+    <p class="lead">Pour activer la visibilité de votre site, contactez le développeur en charge du projet.</p>
+
+    <div class="divider"></div>
+
+    <div class="label">Développeur</div>
+    <div class="dev-name">Amadou Rouga</div>
+
+    <div class="numbers">
+      <a class="number" href="tel:+22791340905">+227 91 340 905 <span class="flag">NE</span></a>
+      <a class="number" href="tel:+233502997960">+233 50 299 7960 <span class="flag">GH</span></a>
+    </div>
+
+    <div class="footer-tag">Contactez-nous pour rendre votre site visible</div>
   </div>
-  <div style="display:flex; align-items:center; gap:6px;">
-    <a class="nav-cta" href="#livre"><span class="nav-cta-full">Se procurer le livre</span><span class="nav-cta-short">Le livre</span></a>
-    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMobilePanel">
-      <i data-lucide="menu" id="navToggleIcon"></i>
-    </button>
-  </div>
-</nav>
-<div class="nav-mobile-panel" id="navMobilePanel">
-  <a href="#hero">Accueil</a>
-  <a href="#apropos">À propos</a>
-  <a href="#livre">Livre</a>
-  <a href="#oratoire">Formation</a>
-  <a href="#coaching">Coaching</a>
-  <a href="#contact">Contact</a>
-</div>
-
-<header class="hero" id="hero">
-  <div class="blob blob-1" aria-hidden="true"></div>
-  <div class="blob blob-2" aria-hidden="true"></div>
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow reveal in-view"><i data-lucide="mic" style="width:14px;height:14px;"></i> Coach en leadership · Formateur en art oratoire · Auteur d'un livre publié</span>
-      <h1 class="reveal in-view">La parole qui convainc.<br>Le <span class="grad">leadership</span> qui s'impose.</h1>
-      <p class="lede reveal in-view">Kossi M. Badohoun — Leader Raoul — aide dirigeants, entrepreneurs et professionnels de Niamey à transformer leur prise de parole en véritable force de leadership. Une méthode concrète, un accompagnement humain, des résultats mesurables sur votre confiance.</p>
-      <div class="hero-ctas reveal in-view">
-        <a class="btn btn-primary" href="https://wa.me/22788215778" target="_blank" rel="noopener">Démarrer la conversation <i data-lucide="arrow-right" style="width:18px;height:18px;"></i></a>
-        <a class="btn btn-ghost" href="#livre">Découvrir le livre</a>
-      </div>
-      <div class="stats-row reveal in-view">
-        <div class="stat-card"><div class="num" data-count="2000">0</div><div class="lbl">Abonnés &amp; communauté</div></div>
-        <div class="stat-card"><div class="num" data-count="12">0</div><div class="lbl">Chapitres du livre</div></div>
-        <div class="stat-card"><div class="num" data-count="2">0</div><div class="lbl">Weekends de formation</div></div>
-      </div>
-    </div>
-    <div class="hero-visual reveal in-view">
-      <div class="frame">
-        <img src="https://i.ibb.co/0y8DvYgH/Screenshot-20260730-172527.jpg" alt="Leader Raoul en pleine intervention">
-      </div>
-      <div class="float-chip a"><i data-lucide="award"></i> Formateur IGA</div>
-      <div class="float-chip b"><i data-lucide="book-open"></i> Livre publié</div>
-    </div>
-  </div>
-</header>
-
-<section class="value-strip">
-  <div class="wrap value-grid reveal">
-    <div class="value-item"><i data-lucide="crown"></i><h4>Leadership</h4><p>Développer un leadership fort et authentique.</p></div>
-    <div class="value-item"><i data-lucide="target"></i><h4>Impact</h4><p>Créer un effet durable, pas seulement un discours.</p></div>
-    <div class="value-item"><i data-lucide="handshake"></i><h4>Accompagnement</h4><p>Un suivi humain et personnalisé.</p></div>
-    <div class="value-item"><i data-lucide="trending-up"></i><h4>Résultats</h4><p>Des progrès concrets, pas de vagues promesses.</p></div>
-    <div class="value-item"><i data-lucide="rocket"></i><h4>Transformation</h4><p>Transformer les défis en opportunités.</p></div>
-  </div>
-</section>
-
-<section style="padding:64px 0;">
-  <div class="wrap reveal" style="max-width:70ch; margin:0 auto; text-align:center;">
-    <p style="font-family:'Sora'; font-weight:600; font-size:clamp(1.15rem,2.4vw,1.5rem); color:var(--text);">Le véritable leadership ne consiste pas à diriger les autres, mais à révéler le potentiel qui sommeille en eux.</p>
-    <p style="font-size:0.85rem; color:var(--muted); margin-top:14px;">La conviction qui guide chaque formation, chaque séance de coaching et le livre « Osez Réaliser Vos Rêves ».</p>
-  </div>
-</section>
-
-<section id="oratoire">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Formation · Impact Global Academy</span>
-      <h2>Parler en public ne devrait jamais vous freiner.</h2>
-      <p>Beaucoup d'idées excellentes restent invisibles parce que la peur de s'exprimer prend le dessus. En 2 weekends intensifs, vous apprenez à transformer cette peur en présence — pour être entendu, chaque fois que ça compte.</p>
-    </div>
-    <div class="card-grid">
-      <div class="card reveal"><div class="icon-wrap"><i data-lucide="shield"></i></div><h3>Sortir du trac, entrer dans l'aisance</h3><p>Le trac isole et fait perdre des opportunités. Vous apprenez à le gérer et à parler avec un calme naturel, même sous pression.</p></div>
-      <div class="card reveal"><div class="icon-wrap"><i data-lucide="waves"></i></div><h3>Une voix qui porte, une présence qui marque</h3><p>La voix, le corps et le regard font autant que les mots. Vous travaillez les 11 qualités des grands orateurs pour qu'on vous écoute vraiment.</p></div>
-      <div class="card reveal"><div class="icon-wrap"><i data-lucide="target"></i></div><h3>Des messages qui convainquent</h3><p>Une bonne idée mal structurée passe inaperçue. Vous apprenez à construire une présentation claire et à négocier avec assurance.</p></div>
-    </div>
-    <div class="price-row reveal">
-      <div class="price-card"><div class="amount">10 000 F CFA</div><div class="label">Inscription</div></div>
-      <div class="price-card"><div class="amount">65 000 F CFA</div><div class="label">Frais de formation</div></div>
-    </div>
-    <div class="includes reveal">
-      <span class="badge"><i data-lucide="book"></i> Manuel du participant</span>
-      <span class="badge"><i data-lucide="badge-check"></i> Attestation de participation</span>
-      <span class="badge"><i data-lucide="life-buoy"></i> Accompagnement après formation</span>
-    </div>
-  </div>
-</section>
-
-<section id="coaching" class="section-alt">
-  <div class="wrap split">
-    <div class="reveal">
-      <span class="eyebrow">Accompagnement individuel</span>
-      <h2>Le leadership ne s'improvise pas. Il se construit.</h2>
-      <p>Diriger une équipe, porter un projet, incarner une posture de leader : chaque situation a ses propres obstacles. Ce coaching part de votre réalité — pas d'un programme générique — pour vous donner des étapes concrètes, mesurables, et un accompagnement qui reste à vos côtés au-delà des séances.</p>
-      <div class="includes" style="justify-content:flex-start;">
-        <span class="badge"><i data-lucide="sprout"></i> Développement personnel</span>
-        <span class="badge"><i data-lucide="users"></i> Leadership</span>
-        <span class="badge"><i data-lucide="compass"></i> Suivi individuel</span>
-      </div>
-    </div>
-    <img class="reveal" src="https://i.ibb.co/jPw0ZvBm/formation-session.jpg" alt="Session de formation en art oratoire à Niamey">
-  </div>
-</section>
-
-<section id="livre">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Publication</span>
-      <h2>Osez Réaliser Vos Rêves</h2>
-      <p>Un guide en 12 chapitres pour ceux qui refusent de laisser leurs rêves de côté — à lire une fois, à relire chaque fois que le doute revient.</p>
-    </div>
-    <div class="book-panel reveal">
-      <img src="https://i.ibb.co/0ycK0394/livre-cover.jpg" alt="Couverture du livre Osez Réaliser Vos Rêves">
-      <div>
-        <h3 style="font-size:1.2rem; margin-bottom:6px;">Osez Réaliser Vos Rêves</h3>
-        <p style="color:var(--muted); font-size:0.9rem; margin-bottom:14px;">Par Kossi M. Badohoun — préfacé par Alabibou Issaka Hamidou</p>
-        <p style="color:var(--muted);">Ce livre s'adresse à ceux qui sentent leur potentiel bridé par le doute ou les obstacles. Il donne des clés concrètes pour se forger un mental solide, tenir malgré les épreuves, et avancer jusqu'à concrétiser ce qui comptait vraiment.</p>
-        <ol class="chapters">
-          <li data-n="01">Accrochez-vous à vos rêves</li>
-          <li data-n="02">De la motivation à la réalisation</li>
-          <li data-n="03">De la bonne perception qui fait la différence</li>
-          <li data-n="04">Se forger un mental de gagnant</li>
-          <li data-n="05">Faire de sa vie une mission à accomplir</li>
-          <li data-n="06">Devenez votre propre héros</li>
-          <li data-n="07">Mandela et l'école des épreuves</li>
-          <li data-n="08">Treize décisions courageuses et audacieuses</li>
-          <li data-n="09">Six habitudes de ceux qui abandonnent leurs rêves</li>
-          <li data-n="10">L'art de se régénérer et de rebâtir sur les ruines</li>
-          <li data-n="11">Libérez votre potentiel</li>
-          <li data-n="12">C'est encore possible : votre avenir commence maintenant</li>
-        </ol>
-        <div style="margin-top:26px;">
-          <a class="btn btn-primary" href="https://wa.me/22788215778" target="_blank" rel="noopener">Se procurer le livre <i data-lucide="arrow-right" style="width:18px;height:18px;"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-alt">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Crédibilité</span>
-      <h2>Une expertise construite sur le terrain</h2>
-    </div>
-    <div class="card-grid">
-      <div class="card reveal"><div class="icon-wrap"><i data-lucide="graduation-cap"></i></div><h3>Formation certifiée</h3><p>Programme dispensé sous la bannière Impact Global Academy (IGA), avec attestation de participation remise à chaque session.</p></div>
-      <div class="card reveal"><div class="icon-wrap"><i data-lucide="book-open"></i></div><h3>Auteur d'un livre publié</h3><p>« Osez Réaliser Vos Rêves », préfacé par Alabibou Issaka Hamidou — 12 chapitres sur la persévérance et le dépassement de soi.</p></div>
-      <div class="card reveal"><div class="icon-wrap"><i data-lucide="users"></i></div><h3>Une communauté engagée</h3><p>Plus de 2 000 personnes suivent son travail et ses interventions à travers le pays.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="apropos">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">À propos</span>
-      <h2>Leader Raoul</h2>
-    </div>
-    <div class="split reveal" style="margin-bottom:56px; align-items:center;">
-      <img src="https://i.ibb.co/0y8DvYgH/Screenshot-20260730-172527.jpg" alt="Kossi M. Badohoun, Leader Raoul" style="border-radius:22px; border:1px solid var(--glass-border); box-shadow:0 30px 60px -24px rgba(0,0,0,0.6);">
-      <p style="color:var(--muted); font-size:1.05rem;">Kossi M. Badohoun, connu sous le nom de Leader Raoul, est coach en développement personnel et en leadership, formateur en art oratoire, auteur et speaker basé à Niamey.</p>
-    </div>
-    <div class="card-grid" style="margin-bottom:56px;">
-      <div class="card reveal">
-        <div class="icon-wrap"><i data-lucide="compass"></i></div>
-        <h3>Sa vision</h3>
-        <p>Un leader ne s'impose pas par le titre, mais par la clarté de sa parole et la solidité de son mental face aux épreuves.</p>
-      </div>
-      <div class="card reveal">
-        <div class="icon-wrap"><i data-lucide="flag"></i></div>
-        <h3>Sa mission</h3>
-        <p>Donner à chacun les outils concrets — voix, posture, méthode — pour transformer sa prise de parole en véritable levier de leadership.</p>
-      </div>
-    </div>
-    <p class="reveal" style="max-width:62ch; margin:0 auto 44px; text-align:center; color:var(--muted); font-size:1.02rem;">Une conviction guide chaque intervention : la parole bien posée est le premier outil du leader.</p>
-    <div class="gallery-viewport reveal">
-      <div class="gallery-track">
-        <figure><img src="https://i.ibb.co/rfQHmczB/remise-attestation-1.jpg" alt="Remise d'attestations aux participants de la formation IGA"><figcaption>Remise des attestations — IGA</figcaption></figure>
-        <figure><img src="https://i.ibb.co/LDrbfc16/attestation-group.jpg" alt="Remise d'attestation en art oratoire"><figcaption>Formation en art oratoire</figcaption></figure>
-        <figure><img src="https://i.ibb.co/6cQY6GHz/group-photo.jpg" alt="Session de formation à Niamey"><figcaption>Session à Niamey</figcaption></figure>
-        <figure><img src="https://i.ibb.co/jPw0ZvBm/formation-session.jpg" alt="Session de formation en art oratoire"><figcaption>Formation en art oratoire</figcaption></figure>
-        <figure><img src="https://i.ibb.co/rfQHmczB/remise-attestation-1.jpg" alt="Remise d'attestations aux participants de la formation IGA"><figcaption>Remise des attestations — IGA</figcaption></figure>
-        <figure><img src="https://i.ibb.co/LDrbfc16/attestation-group.jpg" alt="Remise d'attestation en art oratoire"><figcaption>Formation en art oratoire</figcaption></figure>
-        <figure><img src="https://i.ibb.co/6cQY6GHz/group-photo.jpg" alt="Session de formation à Niamey"><figcaption>Session à Niamey</figcaption></figure>
-        <figure><img src="https://i.ibb.co/jPw0ZvBm/formation-session.jpg" alt="Session de formation en art oratoire"><figcaption>Formation en art oratoire</figcaption></figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer id="contact">
-  <div class="wrap">
-    <div class="footer-grid" style="align-items:flex-start;">
-      <div>
-        <div class="brand" style="margin-bottom:14px;"><span class="logo-mark">LR</span>Leader <span>Raoul</span></div>
-        <p style="font-size:0.85rem; font-weight:600; margin-bottom:10px; color:var(--muted);">Restons connectés</p>
-        <div class="contact-list">
-          <a href="tel:+22788215778"><i data-lucide="phone"></i> (+227) 88 21 57 78</a>
-          <a href="https://wa.me/22788215778" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> WhatsApp</a>
-          <a href="https://www.facebook.com/share/1FAP2YbQU4/" target="_blank" rel="noopener"><i data-lucide="facebook"></i> Facebook</a>
-          <span style="display:flex; align-items:center; gap:8px;"><i data-lucide="map-pin" style="width:16px;height:16px;"></i> Niamey, Niger</span>
-        </div>
-      </div>
-      <div>
-        <p style="font-size:0.85rem; font-weight:600; margin-bottom:10px; color:var(--muted);">Liens rapides</p>
-        <div class="contact-list">
-          <a href="#hero">Accueil</a>
-          <a href="#apropos">À propos</a>
-          <a href="#livre">Livre</a>
-          <a href="#oratoire">Formation</a>
-          <a href="#coaching">Coaching</a>
-        </div>
-      </div>
-      <a class="btn btn-primary" href="https://wa.me/22788215778" target="_blank" rel="noopener">Démarrer la conversation</a>
-    </div>
-    <p class="fine">© 2026 Leader Raoul Officiel — Niamey, Niger</p>
-  </div>
-</footer>
-
-<script>
-  function initIcons(){ if (typeof lucide !== 'undefined') lucide.createIcons(); }
-  if (typeof lucide !== 'undefined') {
-    lucide.createIcons();
-  } else {
-    window.addEventListener('load', initIcons);
-  }
-
-  const navToggle = document.getElementById('navToggle');
-  const navPanel = document.getElementById('navMobilePanel');
-  navToggle.addEventListener('click', () => {
-    const isOpen = navPanel.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    navToggle.innerHTML = isOpen ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
-    initIcons();
-  });
-  navPanel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    navPanel.classList.remove('open');
-    navToggle.setAttribute('aria-expanded', 'false');
-    navToggle.innerHTML = '<i data-lucide="menu"></i>';
-    initIcons();
-  }));
-
-  // Reveal on scroll
-  const revealEls = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); } });
-  }, { threshold: 0.15 });
-  revealEls.forEach(el => io.observe(el));
-
-  // Animated counters
-  const counters = document.querySelectorAll('[data-count]');
-  const counterIo = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        const el = entry.target;
-        const target = parseInt(el.dataset.count, 10);
-        const duration = 1200;
-        const start = performance.now();
-        function tick(now){
-          const p = Math.min((now - start) / duration, 1);
-          const eased = 1 - Math.pow(1 - p, 3);
-          el.textContent = Math.floor(eased * target).toLocaleString('fr-FR') + (p >= 1 ? '+' : '');
-          if(p < 1) requestAnimationFrame(tick);
-        }
-        requestAnimationFrame(tick);
-        counterIo.unobserve(el);
-      }
-    });
-  }, { threshold: 0.4 });
-  counters.forEach(c => counterIo.observe(c));
-</script>
 
 </body>
 </html>
